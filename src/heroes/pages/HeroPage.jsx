@@ -1,11 +1,12 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroById } from "../helpers";
+import { useMemo } from "react";
 
 export const HeroPage = () => {
     const navigate = useNavigate();
 
     const { id } = useParams();
-    const hero = getHeroById(id);
+    const hero = useMemo(() => getHeroById(id), [id]);
 
     const onNavigateBack = () => {
         navigate(-1);
