@@ -7,17 +7,17 @@ export const SearchPage = () => {
     const navigate = useNavigate();
 
     const location = useLocation();
-    const query = location.search.slice(2);
+    const query = location.search.slice(3);
 
     const { searchText, onInputChange } = useForm({
         searchText: query
     });
 
 
+    const heroes = getHeroesByName(query);
+
     const showSearch = query.length === 0;
     const showError = query.length > 0 && heroes.length === 0;
-
-    const heroes = getHeroesByName(query);
 
     const onSearchSubmit = (event) => {
         event.preventDefault();
@@ -57,7 +57,8 @@ export const SearchPage = () => {
                         Search a Hero
                     </div>
 
-                    <div className="alert alert-danger animate__animated animate_fadeIn"
+                    <div aria-label="no-hero-label"
+                        className="alert alert-danger animate__animated animate_fadeIn"
                     style={{display: showError ? '' : 'none'}}>
                         No hero with <b>{query}</b>
                     </div>
