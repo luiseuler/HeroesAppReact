@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context";
 
 export const LoginPage = () => {
-    const { login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext, { logged: false });
 
     const navigate = useNavigate();
 
