@@ -1,7 +1,7 @@
-const { render, screen } = require("@testing-library/react");
-const { AuthContext } = require("../../../auth/context/");
-const { PublicRoute } = require("../../../router/");
-const { MemoryRouter, Routes, Route } = require("react-router-dom");
+import { render, screen } from "@testing-library/react";
+import { AuthContext } from '../../auth';
+import { PublicRoute } from "../../router";
+import { MemoryRouter, Routes, Route } from "react-router-dom";
 
 describe('Pruebas en <PublicRoute />', () => {
     test('debe de mostrar el children si no está autenticado', () => {

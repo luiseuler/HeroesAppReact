@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { AuthContext } from "../../../auth";
-import { PrivateRoute } from "../../../router";
+import { AuthContext } from "../../auth";
+import { PrivateRoute } from "../../router";
 
 describe('Pruebas en <PrivateRoute />', () => {
     test('debe de mostrar el children si está autenticado', () => {
