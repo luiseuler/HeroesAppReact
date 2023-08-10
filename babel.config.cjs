@@ -6,7 +6,6 @@ module.exports = {
                 targets:
                 {
                     esmodules: true,
-                    jest: true
                 }
             }
         ],
