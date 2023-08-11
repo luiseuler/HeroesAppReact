@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <HeroList /> debe de hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="row row-cols-1 row-cols-md-3 g-3"
+  />
+</div>
+`;
