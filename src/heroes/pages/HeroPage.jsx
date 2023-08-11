@@ -11,7 +11,7 @@ export const HeroPage = () => {
     const onNavigateBack = () => {
         navigate(-1);
     }
-
+    
     if (!hero) {
         return <Navigate to={'/marvel'} />;
     }
