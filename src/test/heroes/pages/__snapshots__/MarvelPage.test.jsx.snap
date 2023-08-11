@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <MarvelPage /> debe de hacer match con el snapshot 1`] = `
+<div>
+  <h1>
+    MarvelPage
+  </h1>
+  <hr />
+  <div
+    class="row row-cols-1 row-cols-md-3 g-3"
+  >
+    <div
+      class="col animate__animated animate__fadeIn"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="row no-gutters"
+        >
+          <div
+            class="col-4"
+          >
+            <img
+              alt="Batman"
+              class="card-img"
+              src="/heroes/dc-batman.jpg"
+            />
+          </div>
+          <div
+            class="col-8"
+          >
+            <div
+              class="card-body"
+            >
+              <h5
+                class="card-title"
+              >
+                Batman
+              </h5>
+              <p
+                class="card-text"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                class="card-text"
+              >
+                <small
+                  class="text-muted"
+                >
+                  Detective Comics #27
+                </small>
+              </p>
+              <a
+                href="/hero/dc-batman"
+              >
+                Más...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
